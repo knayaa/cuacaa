@@ -1,108 +1,84 @@
-<!DOCTYPE html>
-<html lang="id">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Halaman Web Pantauan Perubahan Suhu Harian</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
-    /* ==== GLOBAL ==== */
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
       margin: 0;
       padding: 20px;
-      background: #fafbff;
-      color: #2a2a2a;
     }
 
-    /* ==== TITLES ==== */
     h2 {
       text-align: center;
-      margin-bottom: 5px;
-      color: #3a6cf6;
-      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 10px;
     }
 
-    h4 {
-      margin-top: 5px;
-      color: #d666a6;
-      font-weight: 500;
+    hr {
+      border: none;
+      border-top: 2px solid #ccc;
+      margin: 20px 0;
     }
 
-    /* ==== MAP ==== */
+    h4.lokasi {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #2c3e50;
+      margin-top: 30px;
+    }
+
+    h4.lokasi i {
+      color: #e74c3c;
+      font-size: 20px;
+    }
+
     iframe {
-      border-radius: 12px;
-      border: 1px solid #e2e8ff;
-      margin: 15px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      margin-top: 10px;
     }
 
-    /* ==== TABLE ==== */
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 15px;
-      background: white;
-      border: 1px solid #f0f1f7;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    table th {
-      padding: 12px;
-      font-size: 14px;
-      color: #ffffff;
-      background: linear-gradient(90deg, #6ea9ff, #ff9ecf);
-      font-weight: 600;
-    }
-
-    table td {
-      padding: 10px;
-      border-bottom: 1px solid #f3f3f3;
-      font-size: 14px;
-      color: #444;
-    }
-
-    table tr:nth-child(even) {
-      background: #fdf4fa;
-    }
-
-    table tr:nth-child(odd) {
-      background: #f6f9ff;
-    }
-
-    table tr:hover {
-      background: #fcebf6;
-      transition: 0.2s;
-    }
-
-    /* ==== FOOTER ==== */
-    p {
-      font-size: 14px;
-      text-align: center;
-      color: #777;
       margin-top: 25px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);#F01919
     }
 
-    /* ==== RESPONSIVE ==== */
-    @media (max-width: 600px) {
-      body {
-        padding: 15px;
-      }
+    th {
+      background-color: #FF0035;
+      color: white;
+      padding: 12px;
+    }
 
-      iframe {
-        height: 280px;
-      }
+    td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
 
-      table th, table td {
-        padding: 8px;
-        font-size: 13px;
-      }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    p.footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #555;
+      font-size: 14px;
     }
   </style>
 </head>
-
 <body>
 
   <h2>Kondisi Cuaca Daerah Pekanbaru</h2>
@@ -134,4 +110,5 @@
   <p>Dibuat &copy; oleh Kanayaa Aulia</p>
 
 </body>
+
 </html>
